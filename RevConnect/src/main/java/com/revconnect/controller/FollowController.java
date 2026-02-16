@@ -43,7 +43,7 @@ public class FollowController {
                         logger.info("UserId={} followed userId={}",
                                 loggedInUser.getId(), id);
 
-                        // 🔔 Notification
+                        // Notification
                         notificationService.createNotification(
                                 loggedInUser.getId(),
                                 "You followed user ID " + id,
